@@ -1,8 +1,25 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.header-contant {
+.header-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  
   &__container {
     @extend %container;
   }
+
+  &__title {
+    margin: 0 0 66px 0;
+    text-align: center;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: $gap;
+  }
 }
+
+
